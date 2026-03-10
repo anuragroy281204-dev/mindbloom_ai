@@ -1,0 +1,20 @@
+questions = [
+"I struggle to focus on details.",
+"I make careless mistakes in tasks.",
+"I find it hard to sustain attention.",
+"I don’t seem to listen when spoken to directly.",
+"I fail to finish tasks.",
+"I avoid tasks requiring sustained mental effort.",
+"I lose necessary items frequently.",
+"I am easily distracted.",
+"I forget daily activities.",
+"I fidget often.",
+"I leave my seat when staying seated is expected.",
+"I feel restless.",
+"I struggle to engage in quiet activities.",
+"I feel constantly 'on the go.'",
+"I talk excessively.",
+"I blurt out answers before questions are completed.",
+"I have difficulty waiting my turn.",
+"I interrupt others."
+]
