@@ -201,7 +201,7 @@ const confidence_score=Math.max(0,100-(hyperactive_score*3));
 
 /* SAVE REPORT */
 
-fetch("http://127.0.0.1:8000/save-report",{
+fetch("https://mindbloom-backend-xsm3.onrender.com/save-report",{
 
 method:"POST",
 
