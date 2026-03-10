@@ -91,7 +91,24 @@ Start Assessment
 
 </motion.div>
 
+
+<div
+  style={{
+    position: "fixed",
+    bottom: "10px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    fontSize: "12px",
+    color: "#8fb9ff",
+    opacity: "0.85",
+    textAlign: "center"
+  }}
+>
+  Made by Anurag, Ishaan, Advika, Hargun
 </div>
+
+</div>
+
 
 )
 
