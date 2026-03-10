@@ -202,38 +202,28 @@ const confidence_score=Math.max(0,100-(hyperactive_score*3));
 /* SAVE REPORT */
 
 fetch("https://mindbloom-backend-xsm3.onrender.com/save-report",{
-
-method:"POST",
-
-headers:{
-"Content-Type":"application/json"
-},
-
-body:JSON.stringify({
-
-user_id:localStorage.getItem("user_id"),
-adhd_score:adhd_score,
-inattentive_score:inattentive_score,
-hyperactive_score:hyperactive_score,
-happiness_score:happiness_score,
-confidence_score:confidence_score
-
+     method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    user_id: localStorage.getItem("user_id"),
+    adhd_score: adhd_score,
+    inattentive_score: inattentive_score,
+    hyperactive_score: hyperactive_score,
+    happiness_score: happiness_score,
+    confidence_score: confidence_score
+  })
 })
-
+.then(res => res.json())
+.then(data => {
+  navigate("/report");   // ← THIS is the important line
 })
-.then(res=>res.json())
-.then(data=>{
-
-console.log("Report saved:",data);
-
-setTimeout(()=>{
-navigate("/report");
-},1500);
-
-})
-.catch(err=>{
-console.log("Save error:",err);
+.catch(err => {
+  console.error(err);
 });
+
+
 
 }
 
